@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Crimson+Text&family=Josefin+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant', sans-serif;
+}
+
+body {
+    display: flex;
+    /* agar element didalamnya dapat diatur secara */
+    align-items: center;
+    /* agar konten didalamnya rata tengah sesuai dengan sumbu X */
+    justify-content: center;
+    height: 100vh;
+    /* untuk memaksimalkan layar sehingga */
+}
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    background-image: url(images/springvale\(2\).png);
+}
+
+.container {
+    background-color: rgb(249, 247, 231);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h3 {
+    color: rgb(219, 153, 153);
+}
+
+.item {
+    background-color: rgb(219, 153, 153);
+    padding: 1rem 10rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.item:hover {
+    background-color: cornflowerblue;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .item {
+        padding: 1rem 3rem;
+    }
+
+    .container {
+        width: 100px;
+    }
+}
